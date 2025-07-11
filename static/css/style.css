@@ -1,4 +1,17 @@
-h1{
-    color: red;
-    text-align: center;
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 0.9rem;
 }

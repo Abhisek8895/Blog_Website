@@ -1,17 +1,33 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everything About Python</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <h1>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    </p>
-    </h1>
-</body>
-</html>
+<!-- index.html -->
+{% extends "base.html" %}
+
+{% block title %}Home | PythonBlog{% endblock %}
+
+{% block content %}
+  <!-- Hero Section -->
+  <header class="bg-light text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Welcome to PythonBlog</h1>
+      <p class="lead text-muted">Master Python with tutorials, projects, and guides</p>
+    </div>
+  </header>
+
+  <!-- Blog Cards -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <!-- Blog Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://source.unsplash.com/400x250/?python,code" class="card-img-top" alt="Post image">
+          <div class="card-body">
+            <h5 class="card-title">Understanding Python Lists</h5>
+            <p class="card-text text-muted small">By Admin | July 10, 2025 | #Basics</p>
+            <p class="card-text">Learn how to use lists effectively in Python for real-world applications.</p>
+            <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat blog cards as needed -->
+    </div>
+  </section>
+{% endblock %}
